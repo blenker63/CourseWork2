@@ -1,5 +1,6 @@
 package com.prosky.coursework2.service;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Question {

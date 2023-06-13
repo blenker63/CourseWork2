@@ -19,7 +19,7 @@ private final QuestionService questionService;
     public Collection<Question> getQuestion(int amount) {
         int size = questionService.getAll().size();
         if (size < amount) {
-            throw new RuntimeException();
+            throw new ExceedingNumberQuestionsException("Запрос превышает количество вопросов.");
         }
         Set<Question> randomSet = new HashSet<>();
         while (randomSet.size() < amount) {

@@ -22,8 +22,6 @@ public class JavaQuestionService implements QuestionService{
 
     @Override
     public Question remove(Question question) {
-//        Question question1 = new Question(String question, String answer);
-//        Question newQuestion = new Question(question, answer);
         if (questionsSet.contains(question)) {
             questionsSet.remove(question);
             return question;
