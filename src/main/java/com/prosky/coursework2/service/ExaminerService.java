@@ -1,6 +1,8 @@
 package com.prosky.coursework2.service;
 
-public interface ExaminerService {
+import java.util.Collection;
 
-    void getQuestions();
+public interface ExaminerService {
+    Collection<Question> getQuestion(int amount);
+
 }
