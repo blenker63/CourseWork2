@@ -47,9 +47,4 @@ public class JavaQuestionServiceTest {
                 new Question("Q4", "A4"));
         Assertions.assertEquals(expected, javaQuestionService.getAll());
     }
-
-    @Test
-    public void getRandomQuestion() {
-
-    }
 }
