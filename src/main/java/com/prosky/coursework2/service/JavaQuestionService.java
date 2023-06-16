@@ -3,10 +3,12 @@ package com.prosky.coursework2.service;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+
 @Service
-public class JavaQuestionService implements QuestionService{
+public class JavaQuestionService implements QuestionService {
     private final Random random = new Random();
-    Set<Question> questionsSet = new HashSet<>();
+    private Set<Question> questionsSet = new HashSet<>();
+
     @Override
     public Question add(String question, String answer) {
         Question newQuestion = new Question(question, answer);

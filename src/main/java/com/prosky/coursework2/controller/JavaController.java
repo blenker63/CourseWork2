@@ -19,13 +19,14 @@ public class JavaController {
     }
 
     @GetMapping(path = "/add")
-    public Question add(@RequestParam(required = false, value = "question" ) String question,
-                        @RequestParam(required = false, value = "answer" ) String answer) {
+    public Question add(@RequestParam(required = false, value = "question") String question,
+                        @RequestParam(required = false, value = "answer") String answer) {
         return questionService.add(question, answer);
     }
+
     @GetMapping(path = "/remove")
-    public Question remove(@RequestParam(required = false, value = "question" ) String question,
-                           @RequestParam(required = false, value =  "answer") String answer) {
+    public Question remove(@RequestParam(required = false, value = "question") String question,
+                           @RequestParam(required = false, value = "answer") String answer) {
 
         return questionService.remove(new Question(question, answer));
     }
